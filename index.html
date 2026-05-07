@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uber 式即時媒合長照模式 - 互動提案</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root { --primary: #e67e22; --dark: #2c3e50; --light-bg: #f8f9fa; --accent: #27ae60; }
+        body { font-family: "Microsoft JhengHei", sans-serif; color: var(--dark); background-color: #fff; }
+        
+        /* 流程圖樣式 */
+        .flow-container { display: flex; align-items: center; justify-content: space-between; padding: 40px 0; overflow-x: auto; }
+        .flow-step { position: relative; text-align: center; flex: 1; min-width: 150px; }
+        .flow-icon { width: 70px; height: 70px; background: white; border: 3px solid var(--primary); border-radius: 50%; 
+                    display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; 
+                    font-size: 1.5rem; font-weight: bold; color: var(--primary); transition: 0.3s; }
+        .flow-step:not(:last-child)::after { 
+            content: '→'; position: absolute; top: 35px; right: -15%; font-size: 1.5rem; color: #ccc; 
+        }
+        .flow-step:hover .flow-icon { background: var(--primary); color: white; transform: scale(1.1); }
+
+        /* 商業畫布樣式 */
+        .bmc-card { border-radius: 15px; border: 1px solid #eee; padding: 25px; margin-bottom: 30px; background: white; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        .poll-section { background: #fff8f0; padding: 20px; border-radius: 10px; margin-top: 15px; border-left: 4px solid var(--primary); }
+        .badge-tag { background: var(--dark); color: white; padding: 5px 12px; border-radius: 20px; font-size: 0.8rem; margin-bottom: 10px; display: inline-block; }
+        
+        .hero { background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)), url('https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&q=80&w=1200');
+                background-size: cover; color: white; padding: 100px 0; }
+    </style>
+</head>
+<body>
+
+    <header class="hero text-center">
+        <div class="container">
+            <h1 class="display-5 fw-bold">長照即時媒合平台</h1>
+            <p class="lead">運用 Uber 式演算法，解決「雙薪家庭」突發的照護痛點</p>
+            <a href="#flow" class="btn btn-warning mt-3 fw-bold">了解服務流程</a>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        
+        <section id="flow" class="mb-5">
+            <h2 class="text-center mb-5"><span class="badge bg-warning text-dark">Step-by-Step</span> 服務使用過程</h2>
+            
+            <div class="flow-container">
+                <div class="flow-step">
+                    <div class="flow-icon">1</div>
+                    <h6>提出請求</h6>
+                    <p class="small text-muted">APP 設定時間與<br>特殊證照需求</p>
+                </div>
+                <div class="flow-step">
+                    <div class="flow-icon">2</div>
+                    <h6>AI 媒合</h6>
+                    <p class="small text-muted">演算法匹配距離<br>最近的照服員</p>
+                </div>
+                <div class="flow-step">
+                    <div class="flow-icon">3</div>
+                    <h6>即時追蹤</h6>
+                    <p class="small text-muted">服務中 GPS 定位<br>與狀態即時回報</p>
+                </div>
+                <div class="flow-step">
+                    <div class="flow-icon">4</div>
+                    <h6>完工評價</h6>
+                    <p class="small text-muted">雙向評分確保<br>平台生態品質</p>
+                </div>
+            </div>
+        </section>
+
+        <hr class="my-5">
+
+        <section class="mb-5">
+            <h2 class="text-center mb-5">商業模式畫布 (BMC) 與 市場驗證</h2>
+            
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScN63SviAT4Z525YJ06WCjWMWIG_5aasid9GF-8hgWVh7AeXg/viewform?embedded=true" width="640" height="1300" frameborder="0" marginheight="0" marginwidth="0">載入中…</iframe>
+
+
+        </section>
+
+<video src="facebook.mp4" controls width="800"></video>
+
+    </main>
+
+    <footer class="bg-dark text-white text-center py-5 mt-5">
+        <div class="container">
+            <h5>長照即時媒合平台專案小組 (組別: 1314)</h5>
+            <p class="small opacity-50">本網頁內容參考自：創新-uber式即時媒合模式.pdf</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
